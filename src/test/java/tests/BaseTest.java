@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.internal.Utils;
 
 import bsh.util.Util;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Utl;
 
 public class BaseTest {
@@ -22,8 +23,8 @@ public class BaseTest {
 	WebDriver driver;
 	@BeforeClass
 	public void setup() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\automation\\chromedriver.exe");
-        driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+	    WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(Utl.readProperty("url"));
  //       driver.get("https://www.saucedemo.com/");
