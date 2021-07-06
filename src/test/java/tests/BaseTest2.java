@@ -18,7 +18,7 @@ public class BaseTest2 {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(Utl.readProperty("url"));
-      //driver.get("https://www.saucedemo.com/");
+        //driver.get("https://www.saucedemo.com/");
     	LoginPage lP=new LoginPage(driver);
 		lP.login("standard_user", "secret_sauce");
         //Thread.sleep(2000);
