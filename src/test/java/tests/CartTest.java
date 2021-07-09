@@ -16,7 +16,7 @@ public class CartTest extends BaseTest2{
 		pP.openCart();
 		yourCartPage yC=new yourCartPage(driver);
 		String actual=yC.getname();
-		String expected="Sauce Labs Backpack";
+		String expected="auce Labs Backpack";
 		Assert.assertEquals(actual, expected);
 		yC.returnShoppinng();
 		pP.addRmToCart("backpack");
