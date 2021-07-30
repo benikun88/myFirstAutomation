@@ -24,10 +24,16 @@ public class LoginPage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	public void login(String username,String password) {
-		fillText(userElement,username);
-		fillText(passElement, password);
+		setUser(username);
+		setPass(password);
 		click(loginBtnElement);
 	}
+	public void setUser(String username) {
+		fillText(userElement,username);
+		}
+	public void setPass(String password) {
+		fillText(passElement, password);
+		}
 	
 	//validate
 	public String getError() {

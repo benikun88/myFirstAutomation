@@ -24,7 +24,7 @@ public class BaseTest {
 	@BeforeClass
 	public void setup() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
-	    WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(Utl.readProperty("url"));
  //       driver.get("https://www.saucedemo.com/");

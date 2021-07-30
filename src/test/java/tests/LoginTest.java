@@ -41,7 +41,7 @@ public class LoginTest extends BaseTest{
 		LoginPage lP=new LoginPage(driver);
 		lP.login("beni", "secret_sauce");
 		String actual=lP.getError();
-		String expected="pic sadface: Username and password do not match any user in this service";
+		String expected="Epic sadface: Username and password do not match any user in this service";
 		Assert.assertEquals(actual, expected);
 		}
 	
