@@ -37,6 +37,7 @@ public class LoginPage extends BasePage{
 	
 	//validate
 	public String getError() {
+		
 		return getT(errorMsg);
 	}
 	
